@@ -20,6 +20,9 @@ RUN pip3 install speedtest-cli
 # install the library for the prometheus client
 RUN pip3 install prometheus-client
 
+# install the library for the ping
+RUN pip3 install pythonping
+
 # create the directory in which the app lives
 RUN mkdir -p /app
 

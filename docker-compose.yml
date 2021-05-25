@@ -14,6 +14,7 @@ services:
     - "--config.file=/etc/prometheus/prometheus.yml"
     volumes:
     - "./prometheus.yml:/etc/prometheus/prometheus.yml:ro"
+    - "prometheus_data:/prometheus"
     depends_on:
     - "metricsserver"
 
@@ -21,5 +22,11 @@ services:
     image: "grafana/grafana"
     ports:
     - "3000:3000"
+    volumes:
+    - "grafana_data:/var/lib/grafana"
     depends_on:
     - "prometheus"
+
+volumes:
+    prometheus_data: {}
+    grafana_data: {}

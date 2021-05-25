@@ -33,6 +33,10 @@ and create a new dashboard in grafana. The following metrics are available from 
 - upload_speed
 - ping_latency
 
+When you want to use a more frequent ping test, set the `PING_DESTINATION` environment variable
+to a domain or ip address and it will ping every 60 seconds with 10 pings and output the average
+latency as `custom_ping` metrics in prometheus.
+
 
 ## 🤝 Contributing
 
