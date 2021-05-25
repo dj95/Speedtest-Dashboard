@@ -1,4 +1,4 @@
-<h1 align="center">Speedtest Dashboard</h1>
+<h1 align="center">Speedtest Dashboard 📈</h1>
 
 <p align="center">
   Monitor your internet bandwidth.
@@ -15,7 +15,7 @@
 - 🐙 docker-compose
 
 
-## 🔧 Usage / Installation
+## 🚀 Usage / Installation
 
 Just clone the repository and run `docker-compose up -d`. The speedtest will run
 every 30 minutes per default. If you wish to configure the interval, set the 

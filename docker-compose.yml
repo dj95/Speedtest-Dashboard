@@ -4,7 +4,7 @@ services:
     build: .
     image: "speedtest"
     environment:
-      INTERVAL_SECONDS: "60"
+      INTERVAL_SECONDS: "1800"
 
   prometheus:
     image: "prom/prometheus"
