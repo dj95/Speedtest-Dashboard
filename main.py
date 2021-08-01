@@ -50,7 +50,11 @@ def update_metrics_thread(latencyGauge, downloadGauge, uploadGauge, timeout):
     # thread main loop
     while True:
         # run the speedtest
-        res = run_speedtest()
+        try:
+            res = run_speedtest()
+        except:
+            time.sleep(timeout)
+            continue
 
         # get the single values from the response
         ping = res["ping"]
